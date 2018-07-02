@@ -6,7 +6,6 @@ const passport = require('passport');
 const authRoutes = require('./routes/authRoutes');
 require('./services/passport');
 require('./models/user');
-require('dotenv').config()
 const keys = require('./config/keys');
 
 mongoose.connect(`mongodb://${keys.mongoUser}:${keys.mongoPass}@ds139219.mlab.com:39219/emailey-dev`)
